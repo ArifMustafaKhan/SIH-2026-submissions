@@ -1,0 +1,140 @@
+name: 🚀 SIH Project Submission
+description: Submit your team's Smart India Hackathon project details
+title: "[SIH Submission]: "
+labels:
+  - sih-submission
+body:
+  - type: input
+    id: team_name
+    attributes:
+      label: Team Name
+      description: Enter the official team name.
+      placeholder: e.g. Team Innovators
+    validations:
+      required: true
+
+  - type: input
+    id: leader
+    attributes:
+      label: Team Leader
+      description: Full name of the team leader.
+      placeholder: Full name
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Number
+      description: Mobile number of the team leader.
+      placeholder: e.g. 9876543210
+    validations:
+      required: true
+
+  - type: textarea
+    id: members
+    attributes:
+      label: Team Members
+      description: List all team members, one per line.
+      placeholder: |-
+        1. Name - Roll No.
+        2. Name - Roll No.
+        3. Name - Roll No.
+    validations:
+      required: true
+
+  - type: input
+    id: ps_id
+    attributes:
+      label: Problem Statement ID (PS ID)
+      placeholder: e.g. SIH1234
+    validations:
+      required: true
+
+  - type: input
+    id: ps_title
+    attributes:
+      label: Problem Statement Title
+      placeholder: Official problem statement title
+    validations:
+      required: true
+
+  - type: input
+    id: theme
+    attributes:
+      label: Theme
+      placeholder: e.g. Smart Automation
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Software
+        - Hardware
+      multiple: false
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      description: Briefly explain your proposed solution, its purpose, and key features.
+      placeholder: Describe your solution...
+    validations:
+      required: true
+
+  - type: input
+    id: tech_stack
+    attributes:
+      label: Technology Stack
+      description: Mention the main technologies, frameworks, languages, and tools used.
+      placeholder: e.g. Python, FastAPI, React, PostgreSQL
+    validations:
+      required: true
+
+  - type: input
+    id: github_repo
+    attributes:
+      label: GitHub Repository
+      description: Provide the URL of your project repository.
+      placeholder: https://github.com/username/repository
+    validations:
+      required: true
+
+  - type: textarea
+    id: ppt
+    attributes:
+      label: PPT / Presentation
+      description: Upload the PPT here by dragging it into this box, or paste a Google Drive/OneDrive link if the file is too large. GitHub attachments may not accept very large files.
+      placeholder: Drag and drop your PPT here, or paste the Drive/OneDrive link.
+    validations:
+      required: true
+
+  - type: input
+    id: demo_video
+    attributes:
+      label: Demo Video
+      description: Provide a YouTube, Google Drive, or other accessible demo-video link.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: input
+    id: college
+    attributes:
+      label: College / Institute
+      placeholder: Official college/institute name
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: declaration
+    attributes:
+      label: Declaration
+      options:
+        - label: I confirm that the information provided above is accurate and that this submission follows the SIH guidelines.
+          required: true
